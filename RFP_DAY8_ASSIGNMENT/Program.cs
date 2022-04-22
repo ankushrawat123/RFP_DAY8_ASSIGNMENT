@@ -6,7 +6,7 @@ int Is_Part_Time = 2;
 int Emp_Rate_Per_Hour = 20;
 
 int Option,x1, x2,x3,x4, y1, y2,y3,y4;
-Console.WriteLine("Enter \n 1 for ONE LINE LENGTH PROGRAM \n2 for TWO LINE COMPARISION PROGRAM \n3 for ATTENDANCE PROGRAM \n4 for WAGE PROGRAM \n5 for PART PROGRAM \n6 for SWITCH_WAGE PROGRAM \n7 for Working_20_Days PROGRAM \n8 for Max_100_Hrs PROGRAM");
+Console.WriteLine("Enter \n 1 for ONE LINE LENGTH PROGRAM \n2 for TWO LINE COMPARISION PROGRAM \n3 for ATTENDANCE PROGRAM \n4 for WAGE PROGRAM \n5 for PART PROGRAM \n6 for SWITCH_WAGE PROGRAM \n7 for Working_20_Days PROGRAM \n8 for Max_100_Hrs PROGRAM \n9 for Max_100_Hrs PROGRAM");
 Option = Convert.ToInt32(Console.ReadLine());
 switch (Option)
 {
@@ -86,6 +86,11 @@ switch (Option)
     case 8:
         Max100HrsUc obj8 = new Max100HrsUc();
         obj8.EmpMax100HrsWage();
+        break;
+
+    case 9:
+        Using_Wage_Method_Uc obj9 = new Using_Wage_Method_Uc();
+        obj9.EmpMax100HrsWage();
         break;
 }
 
