@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using RFP_DAY8_ASSIGNMENT;
 
-Console.WriteLine("\nWelcome to SINGLE LINE LENGTH PROGRAM ...................................................................");
+Console.WriteLine("\nWelcome to SINGLE LINE LENGTH PROGRAM ....................................................................");
 
 int x1, x2, y1, y2;
 Console.WriteLine("Enter the coordinates value for points ");
