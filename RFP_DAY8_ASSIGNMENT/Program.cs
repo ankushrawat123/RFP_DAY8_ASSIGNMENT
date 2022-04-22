@@ -3,7 +3,7 @@ using RFP_DAY8_ASSIGNMENT;
 
 
 int Option,x1, x2,x3,x4, y1, y2,y3,y4;
-Console.WriteLine("Enter \n 1 for ONE LINE LENGTH PROGRAM \n2 for TWO LINE COMPARISION PROGRAM \n3 for ATTENDANCE PROGRAM ");
+Console.WriteLine("Enter \n 1 for ONE LINE LENGTH PROGRAM \n2 for TWO LINE COMPARISION PROGRAM \n3 for ATTENDANCE PROGRAM \n4 for WAGE PROGRAM ");
 Option = Convert.ToInt32(Console.ReadLine());
 switch (Option)
 {
@@ -61,7 +61,12 @@ switch (Option)
         obj3.attendanceMethod(Is_Full_Time, num);
         break;
 
+    case 4:
+        WageUc obj4 = new WageUc();
+        obj4.Wage(); 
+        break;
     
+       
 
 }
 
