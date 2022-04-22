@@ -6,16 +6,20 @@ using System.Threading.Tasks;
 
 namespace RFP_DAY8_ASSIGNMENT
 {
-    internal class WageUc
+    internal class ParttimeUc
     {
-        public void Wage(int Is_Full_Time,int Emp_Rate_Per_Hour)
+        public void Wage(int Is_Full_Time, int Is_Part_Time, int Emp_Rate_Per_Hour)
         {
 
             int empHrs = 0;
             int empWage = 0;
             Random obj = new Random();
-            int num = obj.Next(0, 2);
+            int num = obj.Next(0, 3);
             if (num == Is_Full_Time)
+            {
+                empHrs = 8;
+            }
+            else if (num == Is_Part_Time)
             {
                 empHrs = 8;
             }
