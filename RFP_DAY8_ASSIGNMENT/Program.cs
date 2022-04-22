@@ -3,7 +3,7 @@ using RFP_DAY8_ASSIGNMENT;
 
 
 int Option,x1, x2,x3,x4, y1, y2,y3,y4;
-Console.WriteLine("Enter \n 1 for ONE LINE LENGTH PROGRAM \n2 for TWO LINE COMPARISION PROGRAM ");
+Console.WriteLine("Enter \n 1 for ONE LINE LENGTH PROGRAM \n2 for TWO LINE COMPARISION PROGRAM \n3 for ATTENDANCE PROGRAM ");
 Option = Convert.ToInt32(Console.ReadLine());
 switch (Option)
 {
@@ -52,6 +52,16 @@ switch (Option)
         obj2.TwoLineLength(x1,x2,x3,x4,y1,y2,y3,y4);
         break;
 
+    case 3:
+        Console.WriteLine(" \n Welcome to Employee Attendance Program .............................................");
+        int Is_Full_Time = 1;
+        Random obj = new Random();
+        int num = obj.Next(0, 2);
+        Attendance obj3 = new Attendance();
+        obj3.attendanceMethod(Is_Full_Time, num);
+        break;
+
+    
 
 }
 
