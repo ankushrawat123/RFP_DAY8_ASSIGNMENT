@@ -6,7 +6,7 @@ int Is_Part_Time = 2;
 int Emp_Rate_Per_Hour = 20;
 
 int Option,x1, x2,x3,x4, y1, y2,y3,y4;
-Console.WriteLine("Enter \n 1 for ONE LINE LENGTH PROGRAM \n2 for TWO LINE COMPARISION PROGRAM \n3 for ATTENDANCE PROGRAM \n4 for WAGE PROGRAM \n5 for PART PROGRAM  ");
+Console.WriteLine("Enter \n 1 for ONE LINE LENGTH PROGRAM \n2 for TWO LINE COMPARISION PROGRAM \n3 for ATTENDANCE PROGRAM \n4 for WAGE PROGRAM \n5 for PART PROGRAM \n6 for SWITCH_WAGE PROGRAM ");
 Option = Convert.ToInt32(Console.ReadLine());
 switch (Option)
 {
@@ -72,7 +72,11 @@ switch (Option)
         ParttimeUc obj5 = new ParttimeUc();
         obj5.Wage(Is_Full_Time, Is_Part_Time, Emp_Rate_Per_Hour);
         break;
-       
+
+    case 6:
+        SwitchWageUc obj6 = new SwitchWageUc();
+        obj6.EmpWage();
+        break;
 
 }
 
